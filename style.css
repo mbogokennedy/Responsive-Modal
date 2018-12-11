@@ -1,0 +1,152 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17 px;
+    line-height: 1.6;
+    background: #161c29;
+}
+
+.container {
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 15px;
+    padding-left: 15px;
+    width: 100%;
+}
+
+h2 {
+    color: white;
+    font-weight: bold;
+    text-align: center
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.auto-mr {
+    margin-right: auto !important;
+}
+
+.button {
+    font-size: 18px;
+    text-decoration: none;
+    color: #dfe8ee;
+    background: #1b8fd3;
+    border: #1b8fd3 1px solid;
+    padding: 10px 40px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.modal {
+    position: relative;
+    display: none;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: rgb(211, 211, 211);
+    background-clip: border-box;
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    border-radius: 0.25rem;
+    color: #161c29;
+    position: relative;
+    min-height: 1px;
+    margin: 10px;
+    z-index: 1;
+}
+
+.modalcontent {
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.box-w {
+    flex: 0 0 33.33333%;
+    max-width: 33.3333%;
+}
+
+@media (min-width: 350px) {
+    .container {
+        max-width: 350px;
+    }
+    .box-w {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+
+@media (min-width: 576px) {
+    .container {
+        max-width: 550px;
+    }
+    .box-w {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        max-width: 7500px;
+    }
+    .box-w {
+        flex: 0 0 33.33333%;
+        max-width: 33.3333%;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        max-width: 980px;
+    }
+    .box-w {
+        flex: 0 0 33.33333%;
+        max-width: 33.3333%;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1140px;
+    }
+    .box-w {
+        flex: 0 0 33.33333%;
+        max-width: 33.3333%;
+    }
+}
+
+footer {
+    padding: 30px;
+    font-size: 20px;
+    text-align: center;
+    background-color: #161c29;
+    color: #fff;
+}
+
+.closebtn {
+    padding-right: 10px;
+    padding-left: 10px;
+    background: #992020;
+    float: right;
+    font-size: 30px;
+    color: white
+}
+
+.closebtn:hover,
+.closebtn:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+@keyframes modalopen {
+    from {
+        opacity: 0
+    }
+    to {
+        opacity: 1
+    }
+}
